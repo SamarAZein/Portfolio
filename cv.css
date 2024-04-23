@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --text-color: #411c53;
+    --hover-color: #a63beeec;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --bg-color: #f3c3dd; /*#eedeeb*/
+    --icon-color: #e04dc8;
+}
+
 *
 {
     margin: 0;
@@ -8,7 +17,7 @@
 }
 body
 {
-    background: lightblue;
+    background: var(--bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,7 +29,7 @@ body
     width: 100%;
     max-width: 1000px;
     min-height: 1000px;
-    background: #fff;
+    background: white;
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -29,7 +38,7 @@ body
 .container .left_Side
 {
     position: relative;
-    background: #003147;
+    background: var(--text-color);
     padding: 40px;
 }
 .profileText
@@ -39,7 +48,7 @@ body
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(221, 177, 223, 0.507);
 }
 .profileText .imgBx
 {
@@ -60,7 +69,7 @@ body
 }
 .profileText h2
 {
-    color: #fff;
+    color: var(--bg-color);
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
@@ -70,8 +79,13 @@ body
 }
 .profileText h2 span
 {
-    font-size: 0.8em;
+    font-size: .8em;
+    font-weight: 400;
+}
+.profileText h4 {
+    color: #fff;
     font-weight: 300;
+    font-size: 1rem;
 }
 .contactInfo
 {
@@ -79,7 +93,7 @@ body
 }
 .title
 {
-    color: #fff;
+    color: var(--bg-color);
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 1px;
@@ -145,6 +159,38 @@ body
     height: 100%;
     background: #03a9f4;
 }
+.contactInfo.language li {
+    color: white;
+    font-size: 14px;
+}
+
+.contactInfo.language li i{
+    color: #03a9f4;
+}
+.contactInfo.certificate {
+    padding: 12px;
+    margin-top: 30px;
+}
+.contactInfo.certificate a {
+    text-decoration: none;
+}
+.contactInfo.certificate a button{
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.contactInfo.certificate a button:hover {
+    background-color: white;
+    color: #411c53;
+}
+
 .container .right_Side
 {
     position: relative;
@@ -169,6 +215,7 @@ body
 .p
 {
     color: #333;
+    text-align: justify;
 }
 .about .box
 {
@@ -225,7 +272,7 @@ body
 .interest ul
 {
     display: grid;
-    grid-template-columns: repeat(3,.4fr);
+    grid-template-columns: repeat(2,1fr);
 }
 .interest ul li
 {
