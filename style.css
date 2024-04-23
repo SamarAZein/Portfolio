@@ -505,15 +505,15 @@ footer .bottom .links a {
 @media screen and (max-width: 1900px) {
 
     .main .left h5 {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     .main .left h3 {
-        font-size: 36px;
+        font-size: 46px;
     }
 
     .main .left p {
-        font-size: 18px;
+        font-size: 25px;
     }
 
     .main .right img {
@@ -525,11 +525,19 @@ footer .bottom .links a {
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
     .skills .skill-items .item {
-        width: 40%;
+        width: 46%;
     }
-
+    .skills .skill-items .item h4{
+        text-align: center;
+        text-decoration: underline;
+        font-size: 2rem;
+    }
+    .skills .skill-items .item p{
+        text-align:center;
+        font-style: italic;
+        font-size: 1.2rem;
+    }
     .about .left img {
         width: 370px;
     }
@@ -538,11 +546,11 @@ footer .bottom .links a {
     .about .right h3,
     .portfolio .header h3,
     .feedback h3 {
-        font-size: 32px;
+        font-size: 42px;
     }
 
     .about .right p {
-        font-size: 15px;
+        font-size: 22px;
     }
 
     .feedback .customers .item .rating {
@@ -558,8 +566,24 @@ footer .bottom .links a {
     }
 
 }
-
-@media screen and (max-width: 1280px) {
+@media screen and (max-width:1600px) {
+    .skills .skill-items .item {
+        width: 48%;
+    } 
+    .skills .skill-items .item h4{
+        font-size: 1.6rem;
+    }
+    .skills .skill-items .item p{
+        text-align:justify;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 1400px) {
+    .skills .skill-items .item {
+        width: 42%;
+    }
+}
+@media screen and (max-width: 1300px) {
 
     .skills .skill-items .item {
         width: 37%;
